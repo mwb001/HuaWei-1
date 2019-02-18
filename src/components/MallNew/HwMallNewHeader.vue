@@ -1,13 +1,18 @@
 <template>
     <header>
       <h3>商城头条</h3>
-      <span class="iconfont icon-xiajiantou"></span>
+      <span class="iconfont icon-xiajiantou" @click="back"></span>
     </header>
 </template>
 
 <script>
     export default {
-        name: "HwMallNewHeader"
+        name: "HwMallNewHeader",
+        methods:{
+          back(){
+            window.history.back(-1)
+          }
+        }
     }
 </script>
 

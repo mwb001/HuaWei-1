@@ -422,6 +422,7 @@
       // 滚动条滚动对应的导航高亮显示
       $('.main').scroll(function(){
         $('.scroll_nav').each(function(i){
+          console.log($(this))
           if($(this).offset().top <= 150){
             $('header .nav a').each(function(){
               $(this).css('color','#333')
