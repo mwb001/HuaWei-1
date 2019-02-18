@@ -1,5 +1,5 @@
 <template>
-  <div class="commonbox">
+  <router-link tag="div" class="commonbox" to="/HwShoppinginfo">
     <div class="jptuijian">
       <h2>{{data.title}}</h2>
       <ul class="pul">
@@ -17,7 +17,7 @@
       <contentitem :data="data1.jingpin"></contentitem>
       <p class="more">{{data.more}}<i class="iconfont icon-youjiantou"></i></p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
