@@ -1,0 +1,134 @@
+.Hw-Wd-fangwei{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Hw-Wd-fangwei-top{
+  width: 100%;
+  height: .4rem;
+  line-height: .4rem;
+  background: #fff;
+  display: flex;
+}
+.Hw-Wd-fangwei-top h2{
+  font-size: .16rem;
+}
+.Hw-Wd-fangwei-top .icon-shangjiantou{
+  font-size: .22rem;
+  transform: rotate(-90deg);
+  margin: 0 1rem 0 .3rem;
+}
+.fangweilogo{
+  width: 100%;
+  padding: .07rem 0 .07rem .27rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.fangweilogo img{
+  width: .57rem;
+  height: .45rem;
+}
+.fangweilogo-left{
+  width: .57rem;
+  text-align: center;
+}
+.fangweilogo-left p{
+  font-size: .08rem;
+  color: #000;
+}
+.fangweilogo-right{
+  height: .54rem;
+  line-height: .54rem;
+}
+.fangweilogo-right input{
+  width: .69rem;
+  height: .3rem;
+  border-radius: .13rem;
+  background: #d2d2d2;
+  vertical-align: middle;
+  border: none;
+}
+.fangweilogo-right input:first-child{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 2px solid #8e8e8e;
+}
+.fangweilogo-right input:last-child{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+nav{
+  width: 100%;
+  height: .43rem;
+  line-height: .43rem;
+  background: #4c4849;
+  display: flex;
+}
+nav p{
+  width: 50%;
+  text-align: center;
+  font-size: .14rem;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .13rem;
+}
+nav p:first-child{
+  border-right: 3px solid #bfbbbc;
+}
+.Hw-Wd-fangwei-cen{
+  width: 100%;
+  height: 2.51rem;
+  background: #fe0000;
+  padding: .3rem .3rem .5rem .3rem;
+  box-sizing:border-box;
+}
+.Hw-Wd-fangwei-cen .fangweima{
+  width: 84%;
+  margin-bottom: .16rem;
+}
+.fangweiyanzhengma{
+  display: flex;
+}
+.Hw-Wd-fangwei-cen .yanzhengma{
+  width: 40%;
+  margin-bottom: .51rem;
+  margin-right: 4px;
+}
+.Hw-Wd-fangwei-cen .num{
+  width: .65rem;
+  font-size: 16px;
+  letter-spacing: 2px;
+  background: #e0fcff;
+  font-style: italic;
+}
+.Hw-Wd-fangwei-cen .chaxun{
+  width: 84%;
+  background: #dedede;
+  font-size: .13rem;
+  color: #3d3d3d;
+}
+.Hw-Wd-fangwei-cen input{
+  height: .31rem;
+  line-height: .31rem;
+  border: none;
+  text-indent: .17rem;
+  border-radius: 3px;
+  background: #fff;
+  display: block;
+}
+.Hw-Wd-fangwei-bottom{
+  width: 100%;
+  min-height: 2.11rem;
+  padding: .49rem .38rem .52rem .27rem;
+  box-sizing: border-box;
+}
+.Hw-Wd-fangwei-bottom p{
+  font-size: .11rem;
+  color: #383838;
+  text-indent:.33rem;
+  line-height: .2rem;
+}
+.Hw-Wd-fangwei-bottom p span{
+  color: #9e2326;
+}

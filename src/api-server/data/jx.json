@@ -1,0 +1,220 @@
+{
+  "products":[
+    {
+      "img":"../../../static/img/5acf269e31a0cc0000000017.png",
+      "pinp":"华为 P20 Pro",
+      "hei":"最高可卖",
+      "money":4961,
+      "money1":4510
+    },
+    {
+      "img":"../../../static/img/5ad9946e8f9bad0000000005.png",
+      "pinp":"荣耀 10",
+      "hei":"最高可卖",
+      "money":2563,
+      "money1":2330
+    },
+    {
+      "img":"../../../static/img/20181026104610_5982.png",
+      "pinp":"华为 Mate 20",
+      "hei":"最高可卖",
+      "money":4365,
+      "money1":4365
+    },
+    {
+      "img":"../../../static/img/5a314b495171350000000121.png",
+      "pinp":"荣耀 V10",
+      "hei":"最高可卖",
+      "money":2128,
+      "money1":2128
+    },
+    {
+      "img":"../../../static/img/5abc4532da24282018000001.png",
+      "pinp":"华为 P20",
+      "hei":"最高可卖",
+      "money":3688,
+      "money1":3688
+    },
+    {
+      "img":"../../../static/img/20181102162102_8257.png",
+      "pinp":"荣耀 Magic 2",
+      "hei":"最高可卖",
+      "money":3190,
+      "money1":3190
+    },
+    {
+      "img":"../../../static/img/5a2de81330964b9811000001.png",
+      "pinp":"苹果 Iphone 6",
+      "hei":"最高可卖",
+      "money":1367,
+      "money1":1367
+    },
+    {
+      "img":"../../../static/img/5a28b493c60057c40a000021.png",
+      "pinp":"苹果 Iphone 6 Plus",
+      "hei":"最高可卖",
+      "money":1465,
+      "money1":1465
+    },
+    {
+      "img":"../../../static/img/5a31eee4517135000000026b.png",
+      "pinp":"iPad Pro 12.9寸",
+      "hei":"最高可卖",
+      "money":5135,
+      "money1":5135
+    },
+    {
+      "img":"../../../static/img/5a28b481c60057c40a00001d.png",
+      "pinp":"苹果 iphone 6s",
+      "hei":"最高可卖",
+      "money":1765,
+      "money1":1765
+    }
+  ],
+  "icons":[
+    {
+      "img":"../../../static/img/process1.png",
+      "tit":"在线提交",
+      "imgg":"../../../static/img/seperate.png"
+    },
+    {
+      "img":"../../../static/img/process2.png",
+      "tit":"收预付款",
+      "imgg":"../../../static/img/seperate.png"
+    },
+    {
+      "img":"../../../static/img/process3.png",
+      "tit":"专业质检",
+      "imgg":"../../../static/img/seperate.png"
+    },
+    {
+      "img":"../../../static/img/process4.png",
+      "tit":"发放尾款"
+    }
+  ],
+  "particulars":[
+    {
+      "tit1":"很顺利，，前期询价诚实回答就真的很顺利的完成了。",
+      "tit2":"186****7533 ",
+      "tit3":"回收了",
+      "tit4":" 华为P8"
+    },
+    {
+      "tit1":"物流快捷，验收专业，环保节约。",
+      "tit2":"188****2952  ",
+      "tit3":"回收了",
+      "tit4":"  三星 Galaxy Note 4"
+    },
+    {
+      "tit1":"超赞，很方便，快递员上门取件，然后检测的也很快，返钱也是超快哒。",
+      "tit2":"183****3791   ",
+      "tit3":"回收了",
+      "tit4":"   vivo X7"
+    },
+    {
+      "tit1":"还不错，以后不用的机器继续这样做",
+      "tit2":"186****7727   ",
+      "tit3":"回收了",
+      "tit4":" 华为 Ascend P6"
+    },
+    {
+      "tit1":"还不错，以后不用的机器继续这样做",
+      "tit2":"186****7727   ",
+      "tit3":"回收了",
+      "tit4":" 华为 Ascend P6"
+    },
+    {
+      "tit1":"很好的体验很好的企业。",
+      "tit2":"155****6314    ",
+      "tit3":"回收了",
+      "tit4":" 荣耀 畅玩5X"
+    },
+    {
+      "tit1":"第一次来作，感觉还不错。点赞(´｡✪ω✪｡｀)",
+      "tit2":"186****9667    ",
+      "tit3":"回收了",
+      "tit4":"  苹果 iPhone 6 Plus"
+    },
+    {
+      "tit1":"非常满意 ，比市面价格高，不用自己跑路",
+      "tit2":"137****9957 ",
+      "tit3":"回收了",
+      "tit4":"  荣耀 6 Plus"
+    },
+    {
+      "tit1":"回收方便，价格也合适，非常好可以解决多余的限闲置电子产品问题。",
+      "tit2":"133****5630  ",
+      "tit3":"回收了",
+      "tit4":" 红米手机3S"
+    },
+    {
+      "tit1":"速度很快，很满意。。。。。。",
+      "tit2":"182****5001 ",
+      "tit3":"回收了",
+      "tit4":" 华为 麦芒6"
+    },
+    {
+      "tit1":"速度又快又好，体验很不错呢，这下闲置的电子用品起码可以发挥用处了。",
+      "tit2":"138****6535 ",
+      "tit3":"回收了",
+      "tit4":" 荣耀平板（T1-821w）"
+    },
+    {
+      "tit1":"快速 安全 便捷 非常好 华为商城的这个功能真是深得人心！",
+      "tit2":"158****0288 ",
+      "tit3":"回收了",
+      "tit4":"  苹果 iPhone 4"
+    },
+    {
+      "tit1":"虽然回收的效率还是低了一点，但对于闲置的手机确实是个很好的处理渠道，挺好的，首次使用总体感觉满意。",
+      "tit2":"177****2385 ",
+      "tit3":"回收了",
+      "tit4":" 华为 Mate10 Pro"
+    },
+    {
+      "tit1":"回收人员很专业，速度快。上门服务很方便。回收价和估价一致！",
+      "tit2":"186****0352 ",
+      "tit3":"回收了",
+      "tit4":" 红米手机2A"
+    }
+  ],
+  "user":[
+    {
+      "img":"../../../static/img/phone.png",
+      "tit1":"回收机型",
+      "tit2":"14000+"
+    },
+    {
+      "img":"../../../static/img/user.png",
+      "tit1":"回收用户",
+      "tit2":"3000万"
+    },
+    {
+      "img":"../../../static/img/order.png",
+      "tit1":"累计订单",
+      "tit2":"5000万"
+    }
+  ],
+  "indent":[
+    {
+      "tit":"iconfont icon-dingdan",
+      "tit1":"回收订单"
+    },
+    {
+      "tit":"iconfont icon-youhuiquan",
+      "tit1":"查看代金券"
+    },
+    {
+      "tit":"iconfont icon-wentiquestions1",
+      "tit1":"常见问题"
+    },
+    {
+      "tit":"iconfont icon-kefu",
+      "tit1":"在线客服"
+    },
+    {
+      "tit":"iconfont icon-daipingjia",
+      "tit1":"意见反馈"
+    }
+  ]
+}

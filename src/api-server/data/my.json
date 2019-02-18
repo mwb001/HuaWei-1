@@ -1,0 +1,41 @@
+{
+  "indentNav" : [
+    {"iconClass" : "iconfont icon-daifukuan", "word" : "待付款"},
+    {"iconClass" : "iconfont icon-icon-receive", "word" : "待收货"},
+    {"iconClass" : "iconfont icon-daipingjia", "word" : "待评价"},
+    {"iconClass" : "iconfont icon-tuihuo", "word" : "退换货"},
+    {"iconClass" : "iconfont icon-dingdan", "word" : "回收单"}
+  ],
+  "vipquan" : [
+    {"eDu" : 200, "profile" : "【秒杀券】200元优惠券"},
+    {"eDu" : 100, "profile" : "【礼券】 荣耀10 100元优惠券"},
+    {"eDu" : 10, "profile" : "【华为】配件10元优惠券"}
+  ],
+  "vmall" : {
+    "tit" : "我的Vmall",
+    "list" : [
+      {"img" : "../../../static/img/my_vip.png","word" : "会员频道"},
+      {"img" : "../../../static/img/my_yaoqing.png","word" : "邀请有礼"},
+      {"img" : "../../../static/img/my_yxg.png","word" : "优享购"},
+      {"img" : "../../../static/img/my_ygm.png","word" : "优购码"},
+      {"img" : "../../../static/img/my_zhzx.png","word" : "账号中心"},
+      {"img" : "../../../static/img/my_shdz.png","word" : "收货地址"},
+      {"img" : "../../../static/img/my_smrz.png","word" : "实名认证"},
+      {"img" : "../../../static/img/my_yyjl.png","word" : "预约记录"}
+    ]
+  },
+  "myserver" : {
+    "tit" : "我的服务",
+    "retit" : "服务中心 >",
+    "list" : [
+      {"img" : "../../../static/img/my_yjhx.png","word" : "以旧换新"},
+      {"img" : "../../../static/img/my_sjcz.png","word" : "手机充值"},
+      {"img" : "../../../static/img/my_bgbz.png","word" : "补购保障"},
+      {"img" : "../../../static/img/my_xxmd.png","word" : "线下门点"},
+      {"img" : "../../../static/img/my_cjwt.png","word" : "常见问题"},
+      {"img" : "../../../static/img/my_yjfk.png","word" : "意见反馈"},
+      {"img" : "../../../static/img/my_pjfwcx.png","word" : "配件防伪查询"},
+      {"img" : "../../../static/img/my_fwzx.png","word" : "服务中心"}
+    ]
+  }
+}

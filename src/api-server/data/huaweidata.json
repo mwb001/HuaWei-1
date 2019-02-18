@@ -1,0 +1,146 @@
+{
+  "navdata":[
+    {
+      "imgs":"../static/img/nav01.jpg"
+    },
+    {
+      "imgs":"../static/img/nav02.jpg"
+    },
+    {
+      "imgs":"../static/img/nav03.jpg"
+    },
+    {
+      "imgs":"../static/img/nav02.jpg"
+    }
+  ],
+  "fenlei":[
+    {
+      "imgs":"../static/img/fenlei.jpg",
+      "info":"分类"
+    },
+    {
+      "imgs":"../static/img/yougou.jpg",
+      "info":"优购码"
+    },
+    {
+      "imgs":"../static/img/huan.jpg",
+      "info":"以旧换新"
+    },
+    {
+      "imgs":"../static/img/start.jpg",
+      "info":"实名认证"
+    },
+    {
+      "imgs":"../static/img/app.jpg",
+      "info":"APP下载"
+    }
+  ],
+  "prolist":[
+    {
+      "imgs":"../static/img/meta20.png"
+    },
+    {
+      "imgs":"../static/img/meta20.png"
+    }
+  ],
+  "productlist":[
+    {
+      "bigtitle":"手机",
+      "phoneinfo":[
+        {
+          "classname":"prolist",
+          "new":"../static/img/new.png",
+          "proimg":"../static/img/phone02.png",
+          "title":"HUAWEI nova 4",
+          "smilltitle":"4800万广角三摄",
+          "price":"3399",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolist",
+          "new":"../static/img/bao.png",
+          "proimg":"../static/img/phone01.png",
+          "title":"HUAWEI nova 4",
+          "smilltitle":"赠品质好礼",
+          "price":"999",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolist",
+          "new":"../static/img/bao.png",
+          "proimg":"../static/img/phone01.png",
+          "title":"华为畅享9",
+          "smilltitle":"限量赠耳机 最高399",
+          "price":"4999",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolist",
+          "new":"../static/img/bao.png",
+          "proimg":"../static/img/phone01.png",
+          "title":"HUAWEI Mate20",
+          "smilltitle":"赠品质好礼",
+          "price":"5399",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolist",
+          "new":"../static/img/bao.png",
+          "proimg":"../static/img/phone01.png",
+          "title":"HUAWEI Mate20",
+          "smilltitle":"保时捷设计",
+          "price":"12999",
+          "pricname":"pro_price"
+        }
+      ]
+    },
+    {
+      "bigtitle":"笔记本电脑",
+      "phoneinfo":[
+        {
+          "classname":"prolis",
+          "proimg":"../static/img/ben01.png",
+          "title":"HUAWEI MateBook 13",
+          "smilltitle":"13英寸2K全面屏",
+          "price":"5399",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolis",
+          "new":"../static/img/new.png",
+          "proimg":"../static/img/ben02.png",
+          "title":"HUAWEI MeteBool X Pro",
+          "smilltitle":"13.9英寸笔记本电脑",
+          "price":"7988",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolis",
+          "proimg":"../static/img/ben03.png",
+          "title":"HUAWEI MateBook D（2018版）",
+          "smilltitle":"15.6英寸轻薄笔记本电脑",
+          "price":"6288",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolis",
+          "proimg":"../static/img/ben04.png",
+          "title":"HUAWEI MateBook X",
+          "smilltitle":"尊享6期分期免息",
+          "price":"6188",
+          "pricname":"pro_price"
+        },
+        {
+          "classname":"prolis",
+          "proimg":"../static/img/ben04.png",
+          "title":"HUAWEI MateBook E",
+          "smilltitle":"尊享6期免息",
+          "price":"4288",
+          "pricname":"pro_price"
+        }
+      ]
+    }
+
+  ]
+}
+

@@ -1,0 +1,24 @@
+{
+  "page" : {
+    "tit" : "邀请有礼",
+    "backImg" : "../../../static/img/zjt.jpg",
+    "shareImg" : "../../../static/img/share.jpg"
+  },
+  "activeList" : [
+    {
+      "img" : "../../../static/img/yq_img_03.png",
+      "tit" : "HUAWEI Mate 20系列",
+      "retit" : "邀好友购买返利 0.3%~4%"
+    },
+    {
+      "img" : "../../../static/img/yq_img_04.jpg",
+      "tit" : "荣耀Magic 2",
+      "retit" : "邀好友购买返利 2%"
+    },
+    {
+      "img" : "../../../static/img/yq_img_05.jpg",
+      "tit" : "荣耀10",
+      "retit" : "邀好友购买返利 2%"
+    }
+  ]
+}

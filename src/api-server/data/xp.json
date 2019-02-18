@@ -1,0 +1,404 @@
+{
+  "products":[
+    {
+      "imgs":"../../../static/img/b9a643f3-4296-4f08-b0c9-30dc50670cab.png",
+      "pinp":"HUAWEI nova 4",
+      "intro":"4800万超广角三摄*",
+      "money":"3099 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/6d3c7ac7-9c04-46fd-8f23-c74a12ed9061.png",
+      "pinp":"荣耀畅玩  8A",
+      "intro":"6.09英寸珍珠全面屏  震撼大...",
+      "money":"799 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/4368d0b7-83a8-4df1-a916-66c3f510ff82.png",
+      "pinp":"华为Mate Book 13",
+      "intro":"全面屏轻薄性能本",
+      "money":"4999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/6001f43e-c706-43b5-8696-b3f548949067.jpg",
+      "pinp":"荣耀 V20",
+      "intro":"4800万深感相机 魅眼全视频",
+      "money":"2999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/086bd82b-9fed-4998-8ad0-c439a9983748.jpg",
+      "pinp":"华为安居智能摄像机",
+      "intro":"360度全景视角",
+      "money":"289 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/e459840d-e4cd-4071-8205-ba3b074187d1.jpg",
+      "pinp":"荣耀Magic Book 锐龙版",
+      "intro":"高性能金属轻薄本",
+      "money":"3999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/246b6f8e-2aaa-4a04-81b7-63ab80fa8d18.jpg",
+      "pinp":"华为便携照片打印机",
+      "intro":"随时随地打印多彩生活",
+      "money":"589 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/53117218-1782-4213-8733-5b0b975871b6.png",
+      "pinp":"荣耀FlyPods无线耳机",
+      "intro":"骨声纹ID|语音控制",
+      "money":"749 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/ee44aea6-251a-4ccc-b040-1684092679f5.png",
+      "pinp":"华为畅享 9",
+      "intro":"6.26高清珍珠屏",
+      "money":"999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/f5a42e01-48f8-4339-b063-b0f1012ecd97.jpg",
+      "pinp":"荣耀Magic 2 ",
+      "intro":"魔法全视频 麒麟980AI芯片",
+      "money":"3799 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/03fd5234-a573-4722-8ac3-302a65a8f50b.jpg",
+      "pinp":"HUAWEI Mate 20 ",
+      "intro":"6.53英寸珍珠屏",
+      "money":"3999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/c9b5e1e1-71e2-493a-9fde-257699c35314.png",
+      "pinp":"荣耀手表魔法系列",
+      "intro":"轻薄设计 一周续航",
+      "money":"1299 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/6f66abe9-d0ea-4a46-8679-b7c40d398ed7.png",
+      "pinp":"HUAWEI Free bus",
+      "intro":"高清音质 | 无线充电",
+      "money":"799 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/4b9e1925-1ea7-4a30-97d6-49108d74ef05.jpg",
+      "pinp":"荣耀MINI照片打印机",
+      "intro":"无墨打印 高清画质 小巧便捷",
+      "money":"599 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/3e5b9323-6df4-41ce-a3f1-3b5fde764753.jpg",
+      "pinp":"HUAWEI Mate 20X",
+      "intro":"7.2英寸OLED珍珠屏",
+      "money":"4999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/12f6955d-dc97-4a26-b9d4-e25588a10dd3.png",
+      "pinp":"荣耀手表梦幻系列",
+      "intro":"轻薄潮美 强劲续航",
+      "money":"1299 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/bd44c3d1-5e5a-41cc-8fde-af431143d8f7.jpg",
+      "pinp":"HUAWEI Mate 20Pro",
+      "intro":"6.39OLED 曲面屏",
+      "money":"5399 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/49abeb1c-76d3-439c-951d-db7a00a1a334.png",
+      "pinp":"荣耀小K 2",
+      "intro":"七重定位 精准守护",
+      "money":"299 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/1d0edbbe-5260-4ad8-b1ab-70afd68caccf.png",
+      "pinp":"HUAERI Free Buds",
+      "intro":"骨声纹识别 | AI语音交互",
+      "money":"999 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/a18b697d-4428-4fce-a532-240783867cfb.png",
+      "pinp":"荣耀路由 Pro2",
+      "intro":"四核全千兆 凌霄双芯片",
+      "money":"349 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/f9212841-c68e-4f23-93bc-40a57284cf0c.jpg",
+      "pinp":"华为畅享 9 Plus",
+      "intro":"6.5英寸超清全面屏 1600万四摄",
+      "money":"1499 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/1229e94f-6fd1-4580-a671-cb057b2e6402.jpg",
+      "pinp":"荣耀小哨兵智能摄像头",
+      "intro":"AI高清映射/看得清跟安心",
+      "money":"179 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/1179404e-e8ef-4ce6-9b7e-0caf576b4841.jpg",
+      "pinp":"HUAWEI WATCH GT",
+      "intro":"高清大屏 强劲续航",
+      "money":"1238 ",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/bf60b7fd-d31f-475e-bb18-3cd18f2bcdeb.jpg",
+      "pinp":"荣耀Fly Pods 青春版",
+      "intro":"双击触控 降噪通话 12小时聆听",
+      "money":"399",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/9353587f-c737-4587-98fb-ebefa3b86fd9.png",
+      "pinp":"华为手环 3e跑步精灵",
+      "intro":"可跑鞋佩戴 50米防水",
+      "money":"99",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/afc82b1a-108a-4bfa-813c-5993dfd833ad.png",
+      "pinp":"荣耀WEATERPLAY 8英寸",
+      "intro":"IP防尘防水全高清",
+      "money":"1699",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/889de587-712b-4fe6-80d4-708fc55bb4f3.jpg",
+      "pinp":"华为畅享 MAX",
+      "intro":"7.12珍珠屏",
+      "money":"1699",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/f67109c3-1c79-4714-b8db-31a99fc22fc0.jpg",
+      "pinp":"荣耀10 青春版",
+      "intro":"晒单评价赢好礼",
+      "money":"1399",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/5c54da13-f152-490c-8c0a-51f25ca2014c.jpg",
+      "pinp":"华为儿童手表 3 Pro",
+      "intro":"4G 全网通 高清拍照",
+      "money":"888",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/11d53038-82f3-4ca3-b950-b50b1687a027.jpg",
+      "pinp":"荣耀平板 5",
+      "intro":"10.1英寸全高清屏",
+      "money":"1399",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/ed31eda3-f7f0-4730-980d-68c552a4b78a.jpg",
+      "pinp":"华为平板 M5 青春版",
+      "intro":"智能声控 哈曼卡顿调音",
+      "money":"1899",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/b9eb2e7b-8c4c-4ca6-ba0e-6e71fd01bed0.png",
+      "pinp":"荣耀存储",
+      "intro":"即插即寸 1T大存储空间",
+      "money":"699",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/ca3e19b4-84ab-4099-963a-49830b13762f.jpg",
+      "pinp":"华为畅享平板",
+      "intro":"10.1英寸大屏 超薄金属机身",
+      "money":"1199",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/98426cac-d78a-41ae-8989-e8ae62e8533c.png",
+      "pinp":"荣耀YOYO智能音箱",
+      "intro":"智能通话 能听会说",
+      "money":"199",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/ed92b211-96a3-4f75-9b4d-3e725ef66375.jpg",
+      "pinp":"华为AI音箱",
+      "intro":"丹拿音质 声纹识别",
+      "money":"349",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/06d18487-b0ed-46e9-95a1-fcdeaa53d0e0.jpg",
+      "pinp":"荣耀10",
+      "intro":"2400万AI摄影 GPU Turbo",
+      "money":"2199",
+      "qi":"起",
+      "shu":"|",
+      "buy":"领券",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/428_428_1545220584404mp.png",
+      "pinp":"华为路由 WS5200",
+      "intro":"双核真双频",
+      "money":"219",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/3add4d60-d012-4584-8fee-f8cde7a76140.jpg",
+      "pinp":"荣耀手表魔法系列",
+      "intro":"每一刻都由我",
+      "money":"899",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/2061551f-7f09-45ad-b348-8fac6a6a5bb4.jpg",
+      "pinp":"荣耀手环4 RUNNING版",
+      "intro":"专业跑步监测 两种佩戴方式",
+      "money":"99",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    },
+    {
+      "imgs":"../../../static/img/b220b8d2-490f-4299-8fab-a7a2cd13634e.jpg",
+      "pinp":"荣耀手环4 ",
+      "intro":"触控大彩屏 实施心率监测",
+      "money":"199",
+      "qi":"起",
+      "shu":"|",
+      "buy":"立即购买 >",
+      "ps":"限量赠好礼"
+    }
+  ]
+}

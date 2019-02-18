@@ -1,0 +1,368 @@
+body{
+  background: #f7f9f8;
+  width: 100%;
+  position: relative;
+}
+.content{
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.box{
+  width: 100%;
+  background: #fff;
+}
+.content .lunbo {
+  width: 96%;
+  padding: 4px 0;
+  margin: 0 auto;
+  height: 1.2rem;
+  border-radius: 10px;
+  box-sizing:border-box;
+}
+.lunbo .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+.content .lunbo .swiper-pagination-bullets{
+  bottom: -12px;
+  width: 60%;
+  left: 50%;
+}
+.content .lunbo .swiper-pagination-bullet{
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: .7;
+  width: 6px;
+  height: 6px;
+}
+.content .lunbo .swiper-pagination-bullet-active{
+  background: #fff;
+  opacity: 1;
+}
+.yaoqing{
+  width: 100%;
+  background: #fff;
+}
+.yaoqing ul{
+  width: 100%;
+  height: .19rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .12rem;
+  box-sizing:border-box;
+}
+.yaoqing ul li{
+  width: 20%;
+  display: flex;
+  font-size: 7px;
+  color: #989a99;
+}
+.yaoqing ul li img{
+  width: 16px;
+  height: 16px;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+.lingquan{
+  width: 92%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+}
+.lingquan a{
+  display: block;
+  margin-right: 9%;
+  text-align: center;
+}
+.lingquan a:last-child{
+  margin-right: 0;
+}
+.lingquan a img{
+  width: .4rem;
+  height: .4rem;
+  margin: .1rem auto 4px;
+}
+.lingquan a p{
+  font-size: 7px;
+  color: #b0b0b0;
+  margin-bottom: .1rem;
+}
+.toutiao{
+  width: 100%;
+  height:.3rem;
+  background: #fff;
+  padding: 0rem .12rem;
+  box-sizing:border-box;
+  display: flex;
+  align-items: center;
+}
+.toutiao img{
+  width: .56rem;
+  height: .14rem;
+  margin-right: 1%;
+}
+.toutiao .swiper-slide{
+  font-size: 13px;
+  color: #484848;
+}
+.toutiao a{
+  font-size: 12px;
+  color: #a9a9a9;
+}
+.content .word{
+  width: 76%;
+  height: .2rem;
+  padding: 0;
+  margin: 3px 0;
+}
+.con{
+  width: 100%;
+}
+.con .con-title{
+  height: .28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con .con-title img{
+  width: .12rem;
+  height: .12rem;
+  margin: 0 1%;
+}
+.con .con-title p{
+  font-size: .14rem;
+  font-weight: 600;
+  color: #494b4a;
+}
+.con .con-title span{
+  font-size: .07rem;
+  color: #9a9a9a;
+  margin-left: .06rem;
+}
+.xianshi{
+  width: 100%;
+  min-height: .75rem;
+}
+.jptuijian{
+  width: 100%;
+  background: #fff;
+  padding-top: .23rem;
+}
+.jptuijian h2{
+  font-size: .14rem;
+  color: #232323;
+  text-align: center;
+  margin-bottom:.12rem;
+}
+.con .jptuijian .jingpin{
+  background: #fff;
+}
+.con .jptuijian .jingpin .swiper-slide{
+  width: 35% !important;
+}
+.con .jptuijian .jingpin .swiper-slide p{
+   background: #f9fbfa;
+   box-shadow: 0 0 0 #fff;
+    border-radius: 8px;
+ }
+.con .jptuijian .jingpin .swiper-slide p img{
+  width: .8rem;
+  height: .8rem;
+}
+.con .jptuijian .jingpin .swiper-slide p span {
+  background: #eff1f0;
+}
+.xianshi .swiper-wrapper{
+  padding: 0 0 2% 2%;
+  box-sizing: border-box;
+}
+.xianshi .swiper-slide{
+  width: 21% !important;
+  margin-right: 2% !important;
+  text-align: center;
+}
+.xianshi .swiper-slide p{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  padding: .09rem 5px 4px;
+  box-sizing:border-box;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.05);
+}
+.xianshi .swiper-slide p img{
+  width: .6rem;
+  height: .6rem;
+  margin:0 auto 8px;
+}
+.xianshi .swiper-slide p span{
+  font-size: 6px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.xianshi .swiper-slide h3{
+  font-size: 6px;
+  color: #bf141d;
+  margin-top: .04rem;
+}
+.xianshi .swiper-slide .jiage{
+  color: #3d3d3d;
+}
+.xilie{
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+  box-sizing:border-box;
+}
+.xilie-hw{
+  width: 100%;
+  display: flex;
+}
+.xilie1{
+  width: 50%;
+  margin-right: .9%;
+}
+.xilie1 a img{
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.xilie2{
+  margin-right: 0;
+}
+.xilie2 .top{
+  margin-bottom: .9%;
+}
+.xilie3{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.xilie3 .top{
+  width: 49.5%;
+  margin-right: .9%;
+}
+.xilie3 .top:nth-child(2n){
+  width: 49.6%;
+  margin-right: 0;
+}
+.hw-changxiang{
+  width: 100%;
+  display: flex;
+}
+.hw-changxiang li{
+  width: 33%;
+  padding: .13rem .16rem 8px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: 1%;
+  background: #fafcfb;
+}
+.hw-changxiang li:first-child{
+  border-bottom-left-radius: 5px;
+}
+.hw-changxiang li:last-child{
+  margin-right: 0;
+  border-bottom-right-radius: 5px;
+}
+.hw-changxiang .imgs{
+  width: 100%;
+  height: .76rem;
+}
+.hw-changxiang .imgs img{
+  width: 100%;
+  height: 100%;
+}
+.hw-changxiang li h2{
+  font-size: 8px;
+  color: #333534;
+  font-weight: 800;
+  margin-top: 9px;
+}
+.hw-changxiang li h3{
+  font-size: 7px;
+  color: #888a89;
+  margin: 6px 0;
+}
+.hw-changxiang li .price{
+  font-size: 7px;
+  color: #333534;
+}
+.commonbox{
+  width: 100%;
+  background: #fff;
+  margin-top: .07rem;
+  padding-bottom: .2rem;
+}
+.pul {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.pul li{
+  width: 48%;
+  margin-left: 1.5%;
+  text-align: center;
+}
+.pul li .comp{
+  width: 100%;
+  height: 1.14rem;
+  border-radius: 6px !important;
+  position: relative;
+}
+.pul li .comp img{
+  width: 100%;
+  height: 100%;
+}
+.pul li .comp span{
+  width: 100%;
+  height: .16rem;
+  line-height: .16rem;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  font-size: 6px;
+  color: rgba(255,255,255,0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.pul li .pname{
+  font-size: 8px;
+  color: #2b2b2b;
+  margin: 6px 0;
+}
+.pul li .mprice{
+  font-size: 7px;
+  color: #ab1e24;
+  margin-bottom: 12px;
+}
+.more{
+  width: 100%;
+  height: .28rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 9px;
+  color: #4b4b4b;
+}
+.more .icon-youjiantou{
+  margin-top: .03rem;
+}
+.button-top{
+  background: url("../../../static/img/button-top.png") no-repeat center;
+  display: inline-block;
+  width: .47rem;
+  height: .47rem;
+  position: fixed;
+  bottom: 52px;
+  right: 5px;
+  z-index: 2;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
