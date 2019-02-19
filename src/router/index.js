@@ -183,5 +183,6 @@ export default new Router({
       component:HwAddress
     }
 
-  ]
+  ],
+  linkActiveClass:"active"
 })

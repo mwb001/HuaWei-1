@@ -9,7 +9,7 @@
           <img src="../../static/img/yq_img_01.jpg">
           <img src="../../static/img/yq_img_02.jpg">
           <router-link  to="" class="yq">立即邀请好友</router-link>
-          <router-link to="/inviteStrategy" class="look">查看活动攻略>></router-link>
+          <router-link to="/HwInviteStrategy" class="look">查看活动攻略>></router-link>
         </div>
 
         <div class="moreActive">

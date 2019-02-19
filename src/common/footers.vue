@@ -1,36 +1,36 @@
 <template>
     <div class="footer">
       <ul>
-        <li class="active">
-          <router-link to="/" href="#">
+        <router-link to="/" tag="li" exact>
+          <a href="#">
             <i class="iconfont icon-shouye"></i>
             <span>首页</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/HwClass" href="#">
+          </a>
+        </router-link>
+        <router-link to="/HwClass" tag="li">
+          <a href="#">
             <i class="iconfont icon-fen_lei2"></i>
             <span>分类</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/HwFind" href="#">
+          </a>
+        </router-link>
+        <router-link to="/HwFind" tag="li">
+          <a href="#">
             <i class="iconfont icon-Shapecopy"></i>
             <span>发现</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/HwCar" href="#">
+          </a>
+        </router-link>
+        <router-link to="/HwCar" tag="li">
+          <a href="#">
             <i class="iconfont icon-gouwuche"><span class="cartnum">1</span></i>
             <span>购物车</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/HwMy" href="#">
+          </a>
+        </router-link>
+        <router-link to="/HwMy" tag="li">
+          <a href="#">
             <i class="iconfont icon-wode"></i>
             <span>我的</span>
-          </router-link>
-        </li>
+          </a>
+        </router-link>
       </ul>
     </div>
 </template>
@@ -38,13 +38,7 @@
 <script>
   import $ from "jquery"
     export default {
-        name: "footers",
-        mounted(){
-          $(".footer ul li").click(function(){
-            $(".footer ul li").removeClass("active")
-            $(this).addClass("active")
-          })
-        }
+        name: "footers"
     }
 </script>
 

@@ -21,5 +21,6 @@ header{
 header h3{
   line-height: .5rem;
   text-align: center;
+  font-weight: normal;
 }
 </style>

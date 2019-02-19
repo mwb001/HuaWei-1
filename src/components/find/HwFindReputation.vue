@@ -25,7 +25,7 @@
 }
 .reputation .title{
   width: 100%; background: white; text-align: center;
-  line-height: .5rem; font-size: .24rem; color: #026baf; font-weight: bold;
+  line-height: .5rem; font-size: .22rem; color: #026baf;
 }
 .reputation  .reputation_list{
   width: 100%;
