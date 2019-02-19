@@ -35,7 +35,7 @@
 <style scoped>
 .li{
   width : 23%; margin: 0 1%; float: left; height: .8rem;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  display: flex; flex-direction: column; align-items: center;
 }
 .li img{
   width: .4rem;
