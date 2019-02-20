@@ -8,12 +8,6 @@
       <router-link to="/HwIndexMes" tag="i" class="iconfont icon-xiaoxi"></router-link>
     </div>
     <ul>
-      <!--<router-link to="/" tag="li" class="on">推荐</router-link>-->
-      <!--<router-link to="/huawei" tag="li">华为</router-link>-->
-      <!--<router-link to="/" tag="li" >荣耀</router-link>-->
-      <!--<router-link to="/"  tag="li">新品</router-link>-->
-      <!--<router-link to="/" tag="li">数码惠</router-link>-->
-      <!--<router-link to="/" tag="li">智选</router-link>-->
       <li v-for="(n,i) in list" :key="i" @click="cc(i)">{{n}}</li>
     </ul>
   </div>
