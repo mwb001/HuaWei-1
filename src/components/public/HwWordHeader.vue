@@ -28,6 +28,6 @@ header .back,header .share,header .back img,header .share img{
   width: .3rem; height: .3rem;
 }
 header h5{
-  font-size: .2rem; color: #191919;
+  font-size: .2rem; font-weight: normal; color: #191919;
 }
 </style>
