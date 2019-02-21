@@ -24,7 +24,9 @@
             this.$router.push("/HwInvite");
           }else if(this.n===2){
             this.$router.push("/Hwyxg");
-          }else if(this.n===6){
+          }else if(this.n===4){
+            this.$router.push("/HwWdchangjian");
+          } else if(this.n===6){
             this.$router.push("/HwWdshiming");
           }
       }
