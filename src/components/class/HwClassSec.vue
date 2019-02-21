@@ -1,7 +1,7 @@
 <template>
     <section>
       <hw-sec-left-list :data="data"></hw-sec-left-list>
-      <hw-sec-right-list :data="data"></hw-sec-right-list>
+      <hw-sec-right-list :produce="produce" :data="data"></hw-sec-right-list>
     </section>
 </template>
 
@@ -11,7 +11,7 @@
     export default {
         name: "HwClassSec",
       components: {HwSecRightList, HwSecLeftList},
-      props:["data"]
+      props:["data","produce"]
     }
 </script>
 

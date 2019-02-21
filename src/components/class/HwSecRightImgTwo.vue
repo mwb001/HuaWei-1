@@ -1,13 +1,13 @@
 <template>
   <li>
-    <img :src="data.img" alt="">
+    <img :src="produce" alt="">
   </li>
 </template>
 
 <script>
     export default {
         name: "HwSecRightImgTwo",
-      props:["data"]
+      props:["produce"]
     }
 </script>
 
