@@ -1,14 +1,14 @@
 <template>
   <!--为您推荐-->
   <li class="xxclass">
-    <ul class="img">
-      <hw-sec-right-img :key="a" v-for="(n,a) in data.imgs" :data="n"></hw-sec-right-img>
+    <ul class="img"  v-if="produce.classname">
+      <hw-sec-right-img :key="index" v-for="(n,index) in produce.imgs" :produce="n"></hw-sec-right-img>
     </ul>
-    <ul class="tjclass">
-      <hw-sec-right-img-two :key="a" v-for="(n,a) in data.imgtwo" :data="n"></hw-sec-right-img-two>
+    <ul class="tjclass"  v-if="produce.imgtwo">
+      <hw-sec-right-img-two :key="index" v-for="(n,index) in produce.imgtwo" :produce="n"></hw-sec-right-img-two>
     </ul>
     <ul class="classtwo">
-      <hw-sec-right-class-two :key="a" v-for="(n,a) in data.classone" :data="n"></hw-sec-right-class-two>
+      <hw-sec-right-class-two :produce="produce"></hw-sec-right-class-two>
     </ul>
   </li>
 </template>
@@ -20,7 +20,7 @@
     export default {
         name: "HwSecRight",
       components: {HwSecRightClassTwo, HwSecRightImgTwo, HwSecRightImg},
-      props:["data"]
+      props:["data","produce"]
     }
 </script>
 

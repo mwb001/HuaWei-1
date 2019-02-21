@@ -1,11 +1,11 @@
 <template>
-  <li><img :src="data.img" alt=""></li>
+  <li><img :src="produce" alt=""></li>
 </template>
 
 <script>
     export default {
         name: "HwSecRightImg",
-      props:["data"]
+      props:["produce"]
     }
 </script>
 

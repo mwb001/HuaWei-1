@@ -1,14 +1,24 @@
 <template>
-  <li>
-    <img :src="data.img" alt="">
-    <p>{{data.name}}</p>
+  <li @click="toShoppinginfo(produce)">
+    <img  :src="produce.img[0]">
+    <p>{{produce.name}}</p>
   </li>
 </template>
 
 <script>
     export default {
         name: "HwRightClassThree",
-      props:["data"]
+      props:["data","produce","id","produceIndex"],
+      methods:{
+          toShoppinginfo(produce){
+            this.$router.push({
+              name : "HwShoppinginfo",
+              params : {
+                produce : produce
+              }
+            })
+          }
+      }
     }
 </script>
 
@@ -29,6 +39,8 @@
     margin-bottom: .11rem;
   }
   .cshoplist li p{
-    width:80%;
+    width:80%; white-space: nowrap; text-overflow: ellipsis;
+    overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
   }
 </style>

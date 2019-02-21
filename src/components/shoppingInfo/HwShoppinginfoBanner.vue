@@ -1,12 +1,9 @@
 <template>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
-      <div class="swiper-slide"><img src="../../../static/img/1.jpg"></div>
+      <div class="swiper-slide" :key="index" v-for="(ac,index) in produce.img">
+        <img :src="ac" />
+      </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -15,6 +12,7 @@
 <script>
     export default {
       name: "HwShoppinginfoBanner",
+      props:["produce"]
     }
 </script>
 

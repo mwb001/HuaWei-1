@@ -1,6 +1,6 @@
 <template>
   <ul class="right">
-    <hw-sec-right :key="a" v-for="(n,a) in data.class" :data="n"></hw-sec-right>
+    <hw-sec-right v-for="(aa,index) in produce.goods" :key="index" :produce="aa" :data="data.class"></hw-sec-right>
   </ul>
 </template>
 
@@ -9,7 +9,7 @@
     export default {
         name: "HwSecRightList",
       components: {HwSecRight},
-      props:["data"]
+      props:["data","produce"]
     }
 </script>
 
