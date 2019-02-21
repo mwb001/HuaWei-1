@@ -11,19 +11,19 @@
         <div class="hide_nav">
           <img src="../../static/img/ysd.gif">
           <ul  class="hide_nav_nav">
-            <li><router-link to="">
+            <li><router-link to="/">
               <i class="iconfont  icon-shouye"></i><span>首页</span>
             </router-link></li>
             <li><router-link to="">
               <i class="iconfont  icon-sousuo"></i><span>搜索</span>
             </router-link></li>
-            <li><router-link to="">
+            <li><router-link to="/HwClass">
               <i class="iconfont  icon-fen_lei2"></i><span>分类</span>
             </router-link></li>
-            <li><router-link to="">
+            <li><router-link to="/HwCar">
               <i class="iconfont  icon-gouwuche"></i><span>购物车</span>
             </router-link></li>
-            <li><router-link to="/my">
+            <li><router-link to="/HwMy">
               <i class="iconfont  icon-wode"></i><span>我的</span>
             </router-link></li>
             <li><router-link to="">
@@ -41,20 +41,20 @@
           <li @click="prev"><img src="../../static/img/icon_back_grey.png" ></li>
           <li>
             <img src="../../static/img/icon_more_grey.png" >
-            <ul class="hide_nav_nav">
-              <li><router-link to="">
+            <ul  class="hide_nav_nav">
+              <li><router-link to="/">
                 <i class="iconfont  icon-shouye"></i><span>首页</span>
               </router-link></li>
               <li><router-link to="">
                 <i class="iconfont  icon-sousuo"></i><span>搜索</span>
               </router-link></li>
-              <li><router-link to="">
+              <li><router-link to="/HwClass">
                 <i class="iconfont  icon-fen_lei2"></i><span>分类</span>
               </router-link></li>
-              <li><router-link to="">
+              <li><router-link to="/HwCar">
                 <i class="iconfont  icon-gouwuche"></i><span>购物车</span>
               </router-link></li>
-              <li><router-link to="/my">
+              <li><router-link to="/HwMy">
                 <i class="iconfont  icon-wode"></i><span>我的</span>
               </router-link></li>
               <li><router-link to="">
@@ -67,26 +67,22 @@
         <!--商品-->
         <div id="shop"  class="scroll_nav shop">
           <div class="banner">
-            <hw-shoppinginfo-banner></hw-shoppinginfo-banner>
+            <hw-shoppinginfo-banner :produce="produce"></hw-shoppinginfo-banner>
           </div>
 
           <div class="priceAndName">
-            <div class="shopPrice">￥ <b>1899</b></div>
-            <div class="shopName">荣耀V20 麒麟980 魅眼全视屏 4800万AI超清摄影 全网通6GB+128GB 标配版 幻夜黑 套餐一</div>
-            <div class="shopReNameOne">
-              【2月14日10:08开售】购机享多重权益，下单付款后预计一周内发货
-            </div>
-            <div class="shopReNameTwo">
-              麒麟980处理器|4800万像素摄像头|4000mAh大容量电池|超级快充
-            </div>
+            <div class="shopPrice">￥ <b>{{produce.price}}</b></div>
+            <div class="shopName">{{produce.name}}</div>
+            <div class="shopReNameOne" v-if="produce.nameOne">{{produce.nameOne}}</div>
+            <div class="shopReNameTwo" v-if="produce.nameTwo">{{produce.nameTwo}}</div>
           </div>
 
           <div class="active">
             <div class="cuxiao">
               <p>促销</p>
               <ul>
-                <li>
-                  <span>赠送积分</span><span>购买即赠商城积分，积分可抵现</span>
+                <li :key="index" v-for="(as,index) in produce.cuciao">
+                  <span>{{as[0]}}</span><span>{{as[1]}}</span>
                 </li>
               </ul>
               <img class="cuxiao_info_div" src="../../static/img/ysd.gif">
@@ -99,8 +95,8 @@
                 </div>
                 <div class="cuxiao_section">
                   <ul>
-                    <li>
-                      <span>赠送积分</span><span>购买即赠商城积分，积分可抵现gfbtvhgcsegvyvrtgcvgrh</span>
+                    <li :key="index" v-for="(as,index) in produce.cuciao">
+                      <span>{{as[0]}}</span><span>{{as[1]}}</span>
                     </li>
                   </ul>
                 </div>
@@ -110,29 +106,29 @@
           </div>
 
           <div class="attrs">
-            <div class="attrsList">
+            <div class="attrsList" v-if="produce.color">
                 <p>颜色</p>
                 <ul class="attrsValue">
-                  <li class="attrs_curr_value">魅海蓝</li><li>幻夜黑</li><li>魅力红</li><li>幻影红</li><li>幻影蓝</li>
+                  <li :key="index" v-for="(ad,index) in produce.color" :class="{'attrs_curr_value':!index}">{{ad}}</li>
                 </ul>
             </div>
-            <div class="attrsList">
+            <div class="attrsList" v-if="produce.version">
               <p>版本</p>
               <ul class="attrsValue">
-                <li class="attrs_curr_value">全网通 6GB+128GB</li><li>全网通 8GB+128GB</li><li>MOSCHINO联名版</li>
+                <li :key="index" v-for="(ad,index) in produce.type" :class="{'attrs_curr_value':!index}">{{ad}}</li>
               </ul>
             </div>
-            <div class="attrsList">
+            <div class="attrsList" v-if="produce.type">
               <p>类型</p>
               <ul class="attrsValue">
-                <li class="attrs_curr_value">官方标配</li><li>套餐一</li><li>套餐二</li><li>套餐三</li>
+                <li :key="index" v-for="(ad,index) in produce.type" :class="{'attrs_curr_value':!index}">{{ad}}</li>
               </ul>
             </div>
-            <div class="attrsList">
+            <div class="attrsList" v-if="produce.num">
               <p>数量</p>
               <ul class="attrsCount">
                 <a class="minus" href="javascript:void(0)">-</a>
-                <span>1</span>
+                <span>{{produce.num}}</span>
                 <a class="add" href="javascript:void(0)">+</a>
               </ul>
             </div>
@@ -141,8 +137,7 @@
           <div class="tuijian">
             <p>推荐</p>
             <ul class="tuijianList">
-              <li>荣耀FlyPods系列无线耳机</li><li>荣耀存储</li>
-              <li>荣耀手表</li><li>荣耀无线耳机青春版</li>
+              <li :key="index" v-for="(af,index) in produce.tuijian">{{af}}</li>
             </ul>
           </div>
 
@@ -163,68 +158,20 @@
           </div>
           <div class="pingjia_section">
             <ul class="pingjia_list">
-              <li>
+              <li :key="index" v-for="(ag,index) in produce.pingjia">
                 <div class="word">
                   <div class="user">
                     <div class="user_tx"><img src="../../static/img/defaultface_user_after.png"></div>
                     <div class="user_name">
-                      <h6>漂***移</h6>
+                      <h6>{{ag.user}}</h6>
                       <p>
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
+                        <img src="../../static/img/star.jpg" :key="index1" v-for="(ac,index1) in ag.starNum">
                       </p>
                     </div>
                   </div>
-                  <div class="text">
-                    手机颜值太高，系统运行非常流畅。不亏是中国人的手机——荣耀
-                  </div>
+                  <div class="text">{{ag.text}}</div>
                 </div>
-                <div class="imgss"><img src="../../static/img/2.jpg"></div>
-              </li>
-              <li>
-                <div class="word">
-                  <div class="user">
-                    <div class="user_tx"><img src="../../static/img/defaultface_user_after.png"></div>
-                    <div class="user_name">
-                      <h6>漂***移</h6>
-                      <p>
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                      </p>
-                    </div>
-                  </div>
-                  <div class="text">
-                    手机颜值太高，系统运行非常流畅。不亏是中国人的手机——荣耀
-                  </div>
-                </div>
-                <div class="imgss"><img src="../../static/img/2.jpg"></div>
-              </li>
-              <li>
-                <div class="word">
-                  <div class="user">
-                    <div class="user_tx"><img src="../../static/img/defaultface_user_after.png"></div>
-                    <div class="user_name">
-                      <h6>漂***移</h6>
-                      <p>
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                        <img src="../../static/img/star.jpg">
-                      </p>
-                    </div>
-                  </div>
-                  <div class="text">
-                    手机颜值太高，系统运行非常流畅。不亏是中国人的手机——荣耀
-                  </div>
-                </div>
-                <div class="imgss"><img src="../../static/img/2.jpg"></div>
+                <div class="imgss"><img :src="ag.img"></div>
               </li>
             </ul>
           </div>
@@ -241,30 +188,21 @@
         <div id="intro" class="scroll_nav intro">
           <h6>规格参数</h6>
           <table>
-            <tr>
-              <td>传播名</td>
-              <td>荣耀V20</td>
-            </tr>
-            <tr>
-              <td>后置摄像头</td>
-              <td>4800万像素（f/1.8光圈）+TOF立体深感镜头，支持自动对焦。备注：不同拍照模式的照片像素可能有差异，请以实际为准。</td>
-            </tr>
-            <tr>
-              <td>前置摄像头</td>
-              <td>前置单摄：2500万像素，f/2.0光圈，支持固定焦距。备注：不同拍照模式的照片像素可能有差异，请以实际为准。</td>
+            <tr :key="index" v-for="(cv,index) in produce.attrs.zycs">
+              <td>{{cv.name}}</td>
+              <td>{{cv.value}}</td>
             </tr>
           </table>
           <div class="more_intros">
-            <router-link tag="p" to="/shopAttrs">查看全部参数</router-link>
+            <p @click="showMoreAttrs(produce.attrs)">查看全部参数</p>
           </div>
         </div>
 
         <!--详情-->
         <div id="info" class="scroll_nav info">
-          <p><img src="../../static/img/3.jpg"></p>
-          <p><img src="../../static/img/4.jpg"></p>
-          <p><img src="../../static/img/5.jpg"></p>
-          <p><img src="../../static/img/zrsm.jpg"></p>
+          <p :key="index" v-for="(bf,index) in produce.xqImgs">
+            <img :src="bf" />
+          </p>
         </div>
 
         <div class="shouhouAndTixing">
@@ -308,15 +246,29 @@
   import Swiper from "swiper"
   import "../../node_modules/swiper/dist/css/swiper.css"
   import "../../node_modules/swiper/dist/js/swiper.js"
+  // import produces from "../api-server/data/produces"
   export default {
     name: "HwShoppinginfo",
     components:{
       HwShoppinginfoBanner
     },
+    data(){
+      return{
+        produce : this.$route.params.produce
+      }
+    },
     Swiper,
     methods:{
       prev(){
         this.$router.go(-1);
+      },
+      showMoreAttrs(attrs){
+        this.$router.push({
+          name : "HwShoppinginfoAttrs",
+          params : {
+            attrs
+          }
+        })
       }
     },
     mounted(){
@@ -737,7 +689,7 @@ header .hide_nav,header .hide_nav>img{
   margin-right:.05rem;
 }
 .pingjia .pingjia_section .pingjia_list li .word .text{
-  padding: .1rem; font-size: .14rem; color: #333; overflow: hidden;
+  padding: .1rem; font-size: .14rem; color: #333; overflow: hidden; height: .68rem;
 }
 .pingjia .pingjia_section .pingjia_list li .imgss{
   width: 1.2rem; height: 1.2rem;
