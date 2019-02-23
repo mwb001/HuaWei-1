@@ -79,7 +79,7 @@
           <router-link v-if="data.myserver.retit" to="">{{data.myserver.retit}}</router-link>
         </div>
         <ul>
-          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc" :n="index"></hw-my-module>
+          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc"></hw-my-module>
         </ul>
       </div>
 
