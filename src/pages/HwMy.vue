@@ -18,7 +18,8 @@
                   <img src="../../static/img/defaultface_user_after.png">
                 </div>
                 <div class="userState">
-              <h4 @click="goo">登录/注册</h4><p>享受更多会员权益</p>
+              <h4 @click="goo">{{user}}</h4><p v-if="this.user=='登录/注册'">享受更多会员权益</p>
+                  <p v-if="this.user!='登录/注册'" @click="clear">注销</p>
             </div>
             </div>
             <div class="logining">
@@ -79,7 +80,7 @@
           <router-link v-if="data.myserver.retit" to="">{{data.myserver.retit}}</router-link>
         </div>
         <ul>
-          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc" :n="index"></hw-my-module>
+          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc"></hw-my-module>
         </ul>
       </div>
 
@@ -112,19 +113,24 @@
     import HwMySlide from  "../components/my/HwMySlide"
     import footers from  "../common/footers"
     import data from "../api-server/data/my"
+    import {mapGetters} from "vuex"
     export default {
+
       name: "HwMy",
       components : {
         HwMyHideHeader,HwMyModule,HwMyIndentNav,HwMySlide,footers
       },
       data(){
         return{
-          data
+          data,
+          user:"登录/注册",
+          userpas:"",
         }
       },
+
       mounted(){
         // 头部的显示隐藏
-
+         this.getcoo();
         $('.main').scroll(function(){
           if($('.main').scrollTop() >= 200){
             $('header').fadeIn()
@@ -134,6 +140,30 @@
         })
       },
       methods:{
+        clear(){
+          if(confirm("确定退出当前账号吗")){
+            var exdate=new Date();//获取时间
+            exdate.setTime(exdate.getTime() + 24*60*60*1000*-1);//保存的天数
+            //字符串拼接cookie
+            window.document.cookie="userName"+ "=" +this.zh+";path=/;expires="+exdate.toGMTString();
+            window.document.cookie="userPwd"+"="+this.mima+";path=/;expires="+exdate.toGMTString();
+            this.user="登录/注册";
+          }
+        },
+        getcoo(){
+          if (document.cookie.length>0) {
+            var arr=document.cookie.split('; ');//这里显示的格式需要切割一下自己可输出看下
+            for(var i=0;i<arr.length;i++){
+              var arr2=arr[i].split('=');//再次切割
+              //判断查找相对应的值
+              if(arr2[0]=='userName'){
+                this.user=arr2[1];//保存到保存数据的地方
+              }else if(arr2[0]=='userPwd'){
+                this.userpas=arr2[1];
+              }
+            }
+          }
+        },
         go(index){
            console.log(index);
            if(index==5){
@@ -161,7 +191,7 @@
   flex: 1; overflow-y: auto; overflow-x: hidden;
 }
 .main .header{
-  width: 100%; height: 2.2rem; display: block;
+  width: 100%; height: 2.2rem;
   border-bottom-left-radius: 50% 15%; border-bottom-right-radius: 50% 15%;
   background: #e73332; position: relative;
 }

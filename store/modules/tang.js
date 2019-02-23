@@ -32,6 +32,9 @@ export default{
     fkimg:[],
     fankui:[],
     n:0,
+    n2:0,
+    user:[{user:"15339166126",pas:"000000"},{user:"15336666666",pas:"111111"}],
+    userok:false,
   },
   mutations: {
     "addzj":(state,pay)=>{
@@ -42,6 +45,23 @@ export default{
     },
     "addn":(state,n)=>{
        state.n=n;
+    }, "addn2":(state,n)=>{
+      state.n2=n;
+    },
+    "userok":(state,dat)=>{
+         for(let i=0;i<state.user.length;i++){
+             if(state.user[i].user==dat.user && state.user[i].pas==dat.pas){
+                state.userok=true;
+                return;
+             }
+         }
+         state.userok=false;
+    },
+    "adduser":(state,dat)=>{
+
+      state.user.push(dat);
+      console.log(state.user);
+      alert("恭喜您！注册成功");
     }
   },
   actions: {
@@ -53,6 +73,12 @@ export default{
     },
     addn(store,n){
       store.commit("addn",n);
+    },
+    addn2(store,n){
+      store.commit("addn2",n);
+    },
+    userok(store,dat){
+      store.commit("userok",dat);
     }
   },
   getters:{
@@ -79,6 +105,14 @@ export default{
     },
     "getn":(state)=>{
       return state.n
+    },  "getn2":(state)=>{
+       return state.n
+    },
+    "getuser":(state)=>{
+      return state.userok
+    },
+    "getusers":(state)=>{
+      return state.user
     }
   }
 }

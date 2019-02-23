@@ -17,7 +17,7 @@
              <p>记住账号</p>
           </div>
        </div>
-       <div class="dengl">登录</div>
+       <div class="dengl" @click="login">登录</div>
        <p class="zhuce" @click="tiao">注册账号</p>
        <p class="zhuce">忘记密码</p>
         <div class="qita">
@@ -30,13 +30,19 @@
 </template>
 
 <script>
+   import {mapGetters} from "vuex"
     export default {
         name: "login",
+      computed:mapGetters({
+          userok:"getuser",
+      }),
       data(){
           return {
             zh:"",
             mima:"",
-            zhok:false
+            zhok:false,
+            mimaok:false,
+            jizh:false,
           }
       },
       watch:{
@@ -58,6 +64,7 @@
         mimasr(){
            if(this.mima.length>0 && this.zhok){
              document.getElementsByClassName("dengl")[0].style.backgroundColor="#007dff";
+             this.mimaok=true;
            }else{
              document.getElementsByClassName("dengl")[0].style.backgroundColor="#b5d8ff";
            }
@@ -75,13 +82,43 @@
         dui(){
           document.getElementById("kuang").style.display="none";
           document.getElementById("lanse").style.display="block";
+          this.jizh=true
         },
         lanse(){
           document.getElementById("kuang").style.display="block";
           document.getElementById("lanse").style.display="none";
+          this.jizh=false
         },
         tiao(){
           this.$router.push("/tongzhi");
+        },
+        login(){
+             if(!this.zhok || !this.mimaok){
+               return
+             }else{
+               let dat={
+                 user:this.zh,
+                 pas:this.mima,
+               }
+               this.$store.dispatch("userok",dat);
+               if(this.userok){
+                  if(this.jizh){
+                    // addCookie("user",this.zh,7);
+                    this.setcookie();
+                  }
+                 this.$router.push("/HwMy")
+               }else{
+                  alert("账号或密码错误")
+               }
+               console.log(this.userok);
+             }
+        },
+        setcookie(){
+          var exdate=new Date();//获取时间
+          exdate.setTime(exdate.getTime() + 24*60*60*1000*7);//保存的天数
+          //字符串拼接cookie
+          window.document.cookie="userName"+ "=" +this.zh+";path=/;expires="+exdate.toGMTString();
+          window.document.cookie="userPwd"+"="+this.mima+";path=/;expires="+exdate.toGMTString();
         }
       }
     }

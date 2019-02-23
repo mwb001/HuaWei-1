@@ -28,7 +28,7 @@
             geolocation.getCurrentPosition(function getinfo(position){
               let city = position.address.city;             //获取城市信息
               let province = position.address.province;    //获取省份信息
-              _this.LocationCity = city
+              _this.LocationCity =province+ "   "+ city
               console.log(city,province);
             }, function(e) {
               _this.LocationCity = "定位失败"
