@@ -1,10 +1,11 @@
 <template>
     <div class="bigbox">
-      <div class="dibss">
+
       <div class="div1">
         <i class="iconfont icon-youjiantou" @click="gobac"></i>
         <p>意见与反馈</p>
       </div>
+      <div class="dibss">
        <div class="div1">
           <p class="leip">反馈类型</p>
           <p class="nalei" @click="xuanze">{{nalei}} <i class="iconfont icon-shangjiantou"></i></p>
@@ -47,10 +48,10 @@
          </div>
           <p class="huan" @click="yanzbianhuan">换一张</p>
       </div>
-      </div>
-      <div class="shifou">
-         <div class="tijioa" @click="fanhui">取消</div>
-        <div class="tijioa" id="tijioa2" @click="tijiao">提交</div>
+        <div class="shifou">
+          <div class="tijioa" @click="fanhui">取消</div>
+          <div class="tijioa" id="tijioa2" @click="tijiao">提交</div>
+        </div>
       </div>
       <div class="fkxz" id="fkxz">
            <span class="fkxzspan"></span>
@@ -141,6 +142,7 @@
         randomNum(min,max){
           return Math.floor(Math.random()*(max-min)+min);
         },
+
         makeCode(o,l){
            let nnn="";
           for(let i=0;i<l;i++){
@@ -219,12 +221,15 @@
     height: 100%;
   }
   .bigbox{
+    height: 100%;
     display:flex;
     flex-direction: column;
     font-size:0.14rem;
   }
   .dibss{
+    flex:1;
     height:6.5rem;
+    overflow-y: auto;
   }
   .div1{
     width:4.1rem;
@@ -458,7 +463,7 @@
   }
   .fkxz{
     width:100%;
-    height: 6.83rem;
+    height: 6.9rem;
     position:absolute;
     top:0.5rem;
     display:none;
