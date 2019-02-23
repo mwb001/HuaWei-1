@@ -4,40 +4,30 @@
       <!-- 购物车为空 -->
       <div class="noshop">
         <div class="bgno">
-                <span class="iconfont icon-gouwuche">
-                    <span class="iconfont icon-error"></span>
-                </span>
+          <span class="iconfont icon-gouwuche">
+              <span class="iconfont icon-error"></span>
+          </span>
           <h4>购物车中还没有商品，赶紧选购吧！</h4>
         </div>
         <p>去逛逛</p>
       </div>
-      <!-- 热销推荐 -->
-      <div class="tuijian">
-        <h3>热销推荐</h3>
-        <hw-car-rxtj-list></hw-car-rxtj-list>
-      </div>
     </div>
+    <!-- 购物车有东西 -->
     <div class="has">
-      <!-- 购物车有东西 -->
-      <hw-car-shop-list :data="data"></hw-car-shop-list>
-      <!-- 推荐搭配 -->
-      <div class="tuijian tjdp">
-        <h3>推荐搭配</h3>
-          <hw-car-rxtj-list></hw-car-rxtj-list>
-      </div>
+      <hw-car-shop-list @singleCheckEvent="singleCheckGood" @addEvent="reviceAddEvent" @minusEvent="reviceMinusEvent" :produces="produces"></hw-car-shop-list>
     </div>
     <!-- 结算 -->
     <div class="djs">
       <div class="js">
         <div class="qx">
           <p class="checkbox">
-            <input type="checkbox" checked class="check_box">
+            <input @change="checkAllCart" v-model="produces.checked" type="checkbox" class="check_box">
           </p>
           <p>全选</p>
         </div>
         <div class="zj">
-          <p>总计：<span>￥28167</span></p>
-          <div class="zjjs">结算（9）</div>
+          <p>总计：￥<span>{{produces.totalPrice}}</span></p>
+          <div class="zjjs">结算</div>
         </div>
       </div>
     </div>
@@ -50,8 +40,21 @@
     export default {
         name: "HwCarSection",
       components: {HwCarShopList, HwCarRxtjList},
-      props:["data"]
-      
+      props:["produces"],
+      methods:{
+        reviceAddEvent(pid){
+          this.$emit("addEvent",pid)
+        },
+        reviceMinusEvent(pid){
+          this.$emit("minusEvent",pid)
+        },
+        checkAllCart(){
+          this.$emit("checkAllEvent")
+        },
+        singleCheckGood(){
+          this.$emit("singleCheckEvent")
+        }
+      }
     }
 </script>
 
