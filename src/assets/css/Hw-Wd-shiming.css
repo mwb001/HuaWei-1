@@ -11,10 +11,10 @@
   display: flex;
 }
 .Hw-Wd-shiming-top h2{
-  font-size: 18px;
+  font-size: .16rem;
 }
 .Hw-Wd-shiming-top .icon-shangjiantou{
-  font-size: 24px;
+  font-size: .22rem;
   transform: rotate(-90deg);
   margin: 0 1rem 0 .3rem;
 }
@@ -24,21 +24,20 @@
   background:#bf1f21;
 }
 .Hw-Wd-shiming-center img{
-  width: .65rem;
-  height: .65rem;
+  width: .55rem;
+  height: .55rem;
   margin: .67rem auto .1rem;
 }
 .Hw-Wd-shiming-center p{
-  font-size: 16px;
+  font-size: .13rem;
   color: #fff1e1;
   text-align: center;
   margin-bottom: .17rem;
 }
 .Hw-Wd-shiming-center input{
   display: block;
-  width: .77rem;
-  height: .3rem;
-  font-size: 14px;
+  width: .67rem;
+  height: .26rem;
   border: 3px solid #fff1e1;
   text-align: center;
   background: transparent;
@@ -56,13 +55,13 @@
   text-indent: .2rem;
 }
 .Hw-Wd-shiming-bottom-title h2{
-  font-size: 16px;
+  font-size: .11rem;
   color: #838383;
 }
 .Hw-Wd-shiming-bottom-cen{
   width: 100%;
-  height: .89rem;
-  line-height: .89rem;
+  height: .79rem;
+  line-height: .79rem;
   background: #fff;
   display: flex;
 }
@@ -76,12 +75,12 @@
   width: 25%;
 }
 .Hw-Wd-shiming-bottom-cen ul li img{
-  width: .51rem;
-  height: .51rem;
+  width: .41rem;
+  height: .41rem;
   margin: .11rem auto;
 }
 .Hw-Wd-shiming-bottom-cen ul li span{
-  font-size: 14px;
+  font-size: .1rem;
   color: #000;
   display: block;
   line-height: .1rem;
@@ -95,8 +94,7 @@
 .Hw-Wd-shiming-bottom-con p{
   color: #8e8e8e;
   margin-bottom: 5px;
-  font-size: 14px;
-  text-align: left;
+  font-size: .09rem;
 }
 
 .Hw-Wd-Shiming-Rengzheng-cen{
@@ -124,13 +122,12 @@
   box-sizing:border-box;
 }
 .Hw-Wd-Shiming-Rengzheng-con h2{
-  font-size: 16px;
+  font-size: 10px;
   color: #2a2a2a;
 }
 .Hw-Wd-Shiming-Rengzheng-con p{
-  font-size: 14px;
-  line-height: 22px;
-  text-align: left;
+  font-size: 6px;
+  line-height: 20px;
   color: #828282;
 }
 .Hw-Wd-Shiming-Rengzheng-con p a{

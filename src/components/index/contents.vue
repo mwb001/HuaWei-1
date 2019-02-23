@@ -67,7 +67,9 @@
           <h2>精品推荐</h2>
           <contentitem :data="data.jingpin"></contentitem>
         </div>
-        <commonbox v-for="(com,index) in data.commons" :data="com" :key="index"></commonbox>
+        <router-link tag="div" to="/HwShoppinginfo">
+          <commonbox v-for="(com,index) in data.commons" :data="com" :key="index"></commonbox>
+        </router-link>
       </div>
       <HuaWeiFooter></HuaWeiFooter>
     </div>
