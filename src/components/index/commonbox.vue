@@ -1,5 +1,5 @@
 <template>
-  <div class="commonbox" @click="goShoppinfo(data)">
+  <router-link tag="div" class="commonbox" to="/HwShoppinginfo">
     <div class="jptuijian">
       <h2>{{data.title}}</h2>
       <ul class="pul">
@@ -17,7 +17,7 @@
       <contentitem :data="data1.jingpin"></contentitem>
       <p class="more">{{data.more}}<i class="iconfont icon-youjiantou"></i></p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -29,16 +29,6 @@
         data(){
           return {
             data1
-          }
-        },
-        methods:{
-          goShoppinfo(data){
-            this.$router.push({
-              name:"/HwShoppinginfo",
-              params:{
-                data:data
-              }
-            })
           }
         },
         components:{

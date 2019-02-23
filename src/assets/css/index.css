@@ -16,7 +16,7 @@ body{
   width: 96%;
   padding: 4px 0;
   margin: 0 auto;
-  height: 1.78rem;
+  height: 1.2rem;
   border-radius: 10px;
   box-sizing:border-box;
 }
@@ -46,9 +46,8 @@ body{
 }
 .yaoqing ul{
   width: 100%;
-  height: .3rem;
+  height: .19rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 .12rem;
   box-sizing:border-box;
@@ -56,7 +55,7 @@ body{
 .yaoqing ul li{
   width: 20%;
   display: flex;
-  font-size: 14px;
+  font-size: 7px;
   color: #989a99;
 }
 .yaoqing ul li img{
@@ -74,25 +73,25 @@ body{
 }
 .lingquan a{
   display: block;
-  margin-right: 4%;
+  margin-right: 9%;
   text-align: center;
 }
 .lingquan a:last-child{
   margin-right: 0;
 }
 .lingquan a img{
-  width: .5rem;
-  height: .5rem;
+  width: .4rem;
+  height: .4rem;
   margin: .1rem auto 4px;
 }
 .lingquan a p{
-  font-size: 16px;
+  font-size: 7px;
   color: #b0b0b0;
   margin-bottom: .1rem;
 }
 .toutiao{
   width: 100%;
-  height:.4rem;
+  height:.3rem;
   background: #fff;
   padding: 0rem .12rem;
   box-sizing:border-box;
@@ -100,21 +99,21 @@ body{
   align-items: center;
 }
 .toutiao img{
-  width: .7rem;
-  height: .24rem;
+  width: .56rem;
+  height: .14rem;
+  margin-right: 1%;
 }
 .toutiao .swiper-slide{
-  font-size: 14px;
+  font-size: 13px;
   color: #484848;
 }
 .toutiao a{
-  font-size: 14px;
+  font-size: 12px;
   color: #a9a9a9;
 }
 .content .word{
-  width: 74%;
+  width: 76%;
   height: .2rem;
-  text-align: left;
   padding: 0;
   margin: 3px 0;
 }
@@ -122,23 +121,23 @@ body{
   width: 100%;
 }
 .con .con-title{
-  height: .34rem;
+  height: .28rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .con .con-title img{
-  width: .16rem;
-  height: .16rem;
+  width: .12rem;
+  height: .12rem;
   margin: 0 1%;
 }
 .con .con-title p{
-  font-size: 16px;
+  font-size: .14rem;
   font-weight: 600;
   color: #494b4a;
 }
 .con .con-title span{
-  font-size: 14px;
+  font-size: .07rem;
   color: #9a9a9a;
   margin-left: .06rem;
 }
@@ -152,11 +151,10 @@ body{
   padding-top: .23rem;
 }
 .jptuijian h2{
-  font-size: 20px;
+  font-size: .14rem;
   color: #232323;
   text-align: center;
   margin-bottom:.12rem;
-  font-weight: 100;
 }
 .con .jptuijian .jingpin{
   background: #fff;
@@ -170,14 +168,14 @@ body{
     border-radius: 8px;
  }
 .con .jptuijian .jingpin .swiper-slide p img{
-  width: .9rem;
-  height: .9rem;
+  width: .8rem;
+  height: .8rem;
 }
 .con .jptuijian .jingpin .swiper-slide p span {
   background: #eff1f0;
 }
 .xianshi .swiper-wrapper{
-  padding: 0 0 0 2%;
+  padding: 0 0 2% 2%;
   box-sizing: border-box;
 }
 .xianshi .swiper-slide{
@@ -196,19 +194,19 @@ body{
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.05);
 }
 .xianshi .swiper-slide p img{
-  width: .7rem;
-  height: .7rem;
+  width: .6rem;
+  height: .6rem;
   margin:0 auto 8px;
 }
 .xianshi .swiper-slide p span{
-  font-size: 14px;
+  font-size: 6px;
   color: #999;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .xianshi .swiper-slide h3{
-  font-size: 14px;
+  font-size: 6px;
   color: #bf141d;
   margin-top: .04rem;
 }
@@ -274,25 +272,25 @@ body{
 }
 .hw-changxiang .imgs{
   width: 100%;
-  height: .86rem;
+  height: .76rem;
 }
 .hw-changxiang .imgs img{
   width: 100%;
   height: 100%;
 }
 .hw-changxiang li h2{
-  font-size: 15px;
+  font-size: 8px;
   color: #333534;
-  font-weight: 500;
+  font-weight: 800;
   margin-top: 9px;
 }
 .hw-changxiang li h3{
-  font-size: 13px;
+  font-size: 7px;
   color: #888a89;
   margin: 6px 0;
 }
 .hw-changxiang li .price{
-  font-size: 13px;
+  font-size: 7px;
   color: #333534;
 }
 .commonbox{
@@ -312,49 +310,45 @@ body{
   margin-left: 1.5%;
   text-align: center;
 }
-.pul li a{
-  display: block;
-}
 .pul li .comp{
   width: 100%;
-  height: 1.74rem;
-  max-width: initial;
+  height: 1.14rem;
+  border-radius: 6px !important;
   position: relative;
 }
 .pul li .comp img{
   width: 100%;
   height: 100%;
-  border-radius: 6px !important;
 }
 .pul li .comp span{
   width: 100%;
-  height: .26rem;
-  line-height: .26rem;
+  height: .16rem;
+  line-height: .16rem;
   text-align: center;
   background: rgba(0,0,0,0.2);
-  font-size: 14px;
+  font-size: 6px;
   color: rgba(255,255,255,0.9);
   position: absolute;
   bottom: 0;
   left: 0;
 }
 .pul li .pname{
-  font-size: 16px;
+  font-size: 8px;
   color: #2b2b2b;
   margin: 6px 0;
 }
 .pul li .mprice{
-  font-size: 16px;
+  font-size: 7px;
   color: #ab1e24;
   margin-bottom: 12px;
 }
 .more{
   width: 100%;
-  height: .38rem;
+  height: .28rem;
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 16px;
+  font-size: 9px;
   color: #4b4b4b;
 }
 .more .icon-youjiantou{

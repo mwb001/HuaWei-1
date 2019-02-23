@@ -21,7 +21,7 @@
         </router-link>
         <router-link to="/HwCar" tag="li">
           <a href="#">
-            <i class="iconfont icon-gouwuche"><span class="cartnum">1</span></i>
+            <i class="iconfont icon-gouwuche"></i>
             <span>购物车</span>
           </a>
         </router-link>

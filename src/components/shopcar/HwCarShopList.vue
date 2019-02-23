@@ -1,6 +1,8 @@
 <template>
   <ul class="hasshop">
-    <hw-car-shop :key="index" v-for="(n,index) in data.products" :data="n"></hw-car-shop>
+    <hw-car-shop @singleCheckEvent="singleCheckGood" @addEvent="reviceAddEvent" @minusEvent="reviceMinusEvent" :produces="item" :pid="index" :key="index" v-for="(item,index) in produces.shops">
+
+    </hw-car-shop>
   </ul>
 </template>
 
@@ -9,7 +11,18 @@
     export default {
         name: "HwCarShopList",
       components: {HwCarShop},
-      props:["data"]
+      props:["produces"],
+      methods:{
+        reviceAddEvent(pid){
+          this.$emit("addEvent",pid)
+        },
+        reviceMinusEvent(pid){
+          this.$emit("minusEvent",pid)
+        },
+        singleCheckGood(){
+          this.$emit("singleCheckEvent")
+        }
+      }
     }
 </script>
 

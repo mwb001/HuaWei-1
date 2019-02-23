@@ -236,7 +236,7 @@
             <i class="iconfont icon-gouwuche"></i><span>购物车</span>
           </li>
         </ul>
-        <router-link to="" class="goPay">加入购物车</router-link>
+        <a href="javascript:void(0)" @click="addToCart(produce)" class="goPay">加入购物车</a>
       </footer>
     </div>
 </template>
@@ -246,7 +246,6 @@
   import Swiper from "swiper"
   import "../../node_modules/swiper/dist/css/swiper.css"
   import "../../node_modules/swiper/dist/js/swiper.js"
-  // import produces from "../api-server/data/produces"
   export default {
     name: "HwShoppinginfo",
     components:{
@@ -269,6 +268,15 @@
             attrs
           }
         })
+      },
+      addToCart(produceInfo){
+        this.$router.push({
+          name : "HwCar",
+          params : {
+            produceInfo
+          }
+        })
+        return false;
       }
     },
     mounted(){
@@ -374,6 +382,7 @@
       // 滚动条滚动对应的导航高亮显示
       $('.main').scroll(function(){
         $('.scroll_nav').each(function(i){
+          // console.log($(this))
           if($(this).offset().top <= 150){
             $('header .nav a').each(function(){
               $(this).css('color','#333')
