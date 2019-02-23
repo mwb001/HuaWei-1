@@ -1,9 +1,9 @@
 <template>
   <li>
     <div class="classtwomes">
-      <h3>{{data.tit}}</h3>
+      <h3></h3>
       <ul class="cshoplist">
-        <hw-right-class-three :key="a" v-for="(n,a) in data.shop" :data="n"></hw-right-class-three>
+        <hw-right-class-three :id="n.id" :produceIndex="index" :key="index" v-for="(n,index) in produce" :produce="n"></hw-right-class-three>
       </ul>
     </div>
   </li>
@@ -14,7 +14,12 @@
     export default {
         name: "HwSecRightClassTwo",
       components: {HwRightClassThree},
-      props:["data"]
+      props:["data","produce"],
+      methods:{
+          xx(a,b){
+            console.log(a,b)
+          }
+      }
     }
 </script>
 

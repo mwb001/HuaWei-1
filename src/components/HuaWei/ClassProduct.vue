@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="fenlei">
-        <a href="##" :key="index" v-for="(n,index) of fenl.fenlei">
+        <a href="#" :key="index" v-for="(n,index) of fenl.fenlei" @click="vip(index)">
           <img :src="n.imgs">
           <p>{{n.info}}</p>
         </a>
@@ -20,7 +20,20 @@
     export default {
         name: "ClassProduct",
         components: {ClassProductList},
-        props:["fenl"]
+        props:["fenl"],
+        methods:{
+          vip(i){
+            if(i===1){
+              this.$router.push("/vip");
+            }else if(i===3){
+              this.$router.push("/HwWdShiming");
+            }else if(i===0){
+              this.$router.push("/HwClass");
+            }else if(i===2){
+              this.$router.push("/HwYxg");
+            }
+          }
+        }
     }
 </script>
 

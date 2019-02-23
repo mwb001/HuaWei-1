@@ -24,7 +24,9 @@
             this.$router.push("/HwInvite");
           }else if(this.n===2){
             this.$router.push("/Hwyxg");
-          }else if(this.n===6){
+          }else if(this.n===4){
+            this.$router.push("/HwWdchangjian");
+          } else if(this.n===6){
             this.$router.push("/HwWdshiming");
           }
       }
@@ -35,7 +37,7 @@
 <style scoped>
 .li{
   width : 23%; margin: 0 1%; float: left; height: .8rem;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  display: flex; flex-direction: column; align-items: center;
 }
 .li img{
   width: .4rem;

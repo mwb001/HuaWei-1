@@ -79,7 +79,7 @@
           <router-link v-if="data.myserver.retit" to="">{{data.myserver.retit}}</router-link>
         </div>
         <ul>
-          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc"></hw-my-module>
+          <hw-my-module :key="index" v-for="(cc,index) in data.myserver.list"  :data="cc" :n="index"></hw-my-module>
         </ul>
       </div>
 
@@ -161,7 +161,7 @@
   flex: 1; overflow-y: auto; overflow-x: hidden;
 }
 .main .header{
-  width: 100%; height: 2.2rem;
+  width: 100%; height: 2.2rem; display: block;
   border-bottom-left-radius: 50% 15%; border-bottom-right-radius: 50% 15%;
   background: #e73332; position: relative;
 }

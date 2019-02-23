@@ -45,7 +45,7 @@
     padding: 0 .12rem; height: .5rem; line-height: .5rem; position: relative; background: white;
   }
   .title h3{
-    font-size: .24rem; color: #026baf; text-align: center;
+    font-size: .22rem; color: #026baf; text-align: center; font-weight: normal;
   }
   .title a{
     position: absolute; right: 0rem; top: 0%; text-align: center;

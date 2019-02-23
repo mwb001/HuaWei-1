@@ -18,6 +18,7 @@ import  "../node_modules/swiper/dist/css/swiper.css"
 import "../node_modules/swiper/dist/js/swiper"
 
 
+
 Vue.use(Element, { size: 'small', zIndex: 3000 });
 Vue.use(Mint);
 Vue.use(vueResource);
