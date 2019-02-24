@@ -7,23 +7,59 @@
         <div class="bzqd">
           <h6>包装清单</h6>
           <ul>
-            <li :key="index" v-for="(fg,index) in attrs.bzqd">{{fg}}</li>
+            <li>手机 X 1</li><li>电池（内置） X 1</li>
+            <li>快速指南 X 1</li><li>SuperCharge充电器 X 1</li>
+            <li>三包凭证 X 1</li><li>Type-C 数据线 X 1</li>
+            <li>取卡针 X 1</li><li>TPU 保护壳 X 1</li>
+            <li>荣耀宣传卡片 X 1</li>
           </ul>
         </div>
 
-        <div class="attrs" v-if="attrs.zycs">
+        <div class="attrs">
           <h6>主要参数</h6>
           <table>
-            <tr :key="index" v-for="(fg,index) in attrs.zycs">
-              <td>{{fg.name}}</td><td>{{fg.value}}</td>
+            <tr>
+              <td>传播名</td><td>荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
             </tr>
           </table>
         </div>
-        <div class="attrs" v-if="attrs.xxcs">
-          <h6>详细参数</h6>
+        <div class="attrs">
+          <h6>主要参数</h6>
           <table>
-            <tr :key="index" v-for="(fg,index) in attrs.xxcs">
-              <td>{{fg.name}}</td><td>{{fg.value}}</td>
+            <tr>
+              <td>传播名</td><td>荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
+            </tr>
+          </table>
+        </div>
+        <div class="attrs">
+          <h6>主要参数</h6>
+          <table>
+            <tr>
+              <td>传播名</td><td>荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
+            </tr>
+            <tr>
+              <td>传播名</td>
+              <td>荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20荣耀V20</td>
             </tr>
           </table>
         </div>
@@ -38,14 +74,6 @@
       prev(){
         this.$router.go(-1);
       }
-    },
-    data(){
-      return{
-        attrs : this.$route.params.attrs
-      }
-    },
-    mounted(){
-      console.log(this.$route)
     }
   }
 </script>

@@ -38,14 +38,19 @@
     <p class="tishi tishi2">若使用邮件地址注册，您仍需为帐号提供一个安全手机号用于验证身份。</p>
      <div class="shangwan">
         <p class="shangwana" @click="fanhui1">上一步</p>
-       <p class="shangwana" id="wancheng">完成</p>
+       <p class="shangwana" id="wancheng" @click="wancheng">完成</p>
      </div>
   </div>
 </template>
 
 <script>
+   import data2 from "../../store/modules/data"
+   import {mapMutations} from "vuex";
     export default {
         name: "reg",
+      computed:mapMutations({
+         adduser:"adduser"
+      }),
       data(){
           return {
             yanzhengmatishi:"验证码不存在或已过期",
@@ -79,6 +84,25 @@
 
       },
       methods:{
+        wancheng(){
+           var data = require("../../store/modules/data")
+              if(!this.wangluoanquan){
+                    document.getElementsByClassName("buzhengque2")[0].style.display="block";
+                 data2.push({user:"测试",name:"测试002"})
+                  console.log(data2)
+                    return;
+              }else{
+                document.getElementsByClassName("buzhengque2")[0].style.display="none";
+              }
+             if(this.keywanc){
+               let dat={
+                  user:this.zh,
+                 pas:this.mima,
+               }
+               this.$store.commit("adduser",dat);
+               this.$router.push("/login");
+             }
+        },
         zzjiance(){
            if(this.jiance1 && this.jiance2 && this.jiance3 && this.jiance4){
              document.getElementById("wancheng").style.color="#6e7272";
@@ -201,6 +225,8 @@
             document.getElementsByClassName("dianjitishi")[0].style.color="#18a452";
             document.getElementById("quanwuw").style.display="none";
             document.getElementById("duit").style.display="block";
+            document.getElementsByClassName("buzhengque2")[0].style.display="none";
+
           },300)
         },
         daojishi(){
@@ -259,6 +285,7 @@
 <style scoped>
    .bigbox{
      font-size:0.16rem;
+     background:white;
    }
   .div1{
     width:100%;
@@ -459,7 +486,7 @@
   .shangwan{
      width:3.9rem;
     margin:0 auto;
-    height: 0.35rem;
+    height: 0.5rem;
     margin-top:0.2rem;
   }
   .shangwana{
