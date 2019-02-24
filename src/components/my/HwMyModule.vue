@@ -26,6 +26,8 @@
             this.$router.push("/Hwyxg");
           }else if(this.n===6){
             this.$router.push("/HwWdshiming");
+          }else if(this.n===3){
+            this.$router.push("/HwWdChangjian");
           }
       }
     }

@@ -1,7 +1,7 @@
 <template>
     <div class="cla">
       <Headers></Headers>
-      <hw-class-sec :data="data"></hw-class-sec>
+      <hw-class-sec :produce="produce" :data="data"></hw-class-sec>
       <footers></footers>
     </div>
 </template>
@@ -11,11 +11,14 @@
   import footers from "../common/footers"
   import HwClassSec from "../components/class/HwClassSec"
   import data from "../api-server/data/class"
+  import produce from "../api-server/data/produces"
     export default {
         name: "HwClass",
       components: {HwClassSec, Headers, footers},
       data(){
-          return {data}
+          return {
+            data,produce
+          }
       },
       mounted() {
           $(".leftli").each(function (i) {

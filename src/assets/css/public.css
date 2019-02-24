@@ -44,12 +44,12 @@ html{
 }
 .search input{
   width:100%;
-  height: .21rem;
-  line-height: .21rem;
+  height: .31rem;
+  line-height: .31rem;
   background: #f9f7f8;
   border: none;
   text-indent: 10%;
-  font-size: 8px;
+  font-size: 14px;
   color: #b5b3b4;
   border-radius: 12px;
 }
@@ -57,17 +57,17 @@ html{
   position: absolute;
   left: 3%;
   top: 5px;
-  font-size: 14px;
+  font-size: 19px;
 }
 .icon-xiaoxi{
-  font-size: .2rem;
+  font-size: 24px;
 }
 .index-hea ul{
   width: 100%;
-  height: .22rem;
+  height: .32rem;
   padding-left: 4%;
   box-sizing: border-box;
-  line-height: .22rem;
+  line-height: .32rem;
   display: flex;
   margin-bottom: 2px;
 }
@@ -79,7 +79,7 @@ html{
   margin-right: 0;
 }
 .index-hea li {
-  font-size: .09rem;
+  font-size:14px;
   color: #737373;
 }
 .index-hea .on{
@@ -91,7 +91,7 @@ html{
 }
 .footer ul{
   width: 100%;
-  height: .42rem;
+  height: .52rem;
   display: flex;
   align-items: center;
 }
@@ -102,12 +102,12 @@ html{
 .footer ul li a{
   display: flex;
   flex-direction: column;
-  font-size: 6px;
+  font-size:14px;
   color: #878988;
   text-align: center;
 }
 .footer ul li a i{
-  font-size: 20px;
+  font-size: 22px;
   position: relative;
 }
 .footer ul li a i .cartnum{
