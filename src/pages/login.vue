@@ -127,6 +127,7 @@
 <style scoped>
   .box{
     display:flex;
+    text-align: center;
     flex-direction: column;
     position:relative;
     /*height: 100%;*/
